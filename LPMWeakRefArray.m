@@ -231,7 +231,7 @@
     
     if(countOfItemsAlreadyEnumerated == 0)
     {
-        state->mutationsPtr = &_count;
+        state->mutationsPtr = (unsigned long *)&_count;
     }
     
     
