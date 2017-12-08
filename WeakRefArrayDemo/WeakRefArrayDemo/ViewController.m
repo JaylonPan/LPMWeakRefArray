@@ -22,6 +22,7 @@
     self.weakArr = [LPMWeakRefArray array];
     [self.weakArr addObject:str1];
     [self.weakArr addObject:str2];
+
     NSLog(@"%@",self.weakArr);
 
     // Do any additional setup after loading the view, typically from a nib.
