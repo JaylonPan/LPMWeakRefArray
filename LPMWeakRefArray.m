@@ -39,7 +39,7 @@
 
 #pragma mark - LPMWeakRefArray
 @interface LPMWeakRefArray () {
-    NSUInteger _count;
+    unsigned long _count;
 }
 @property (nonatomic, strong) NSMutableArray *array;
 
@@ -231,7 +231,7 @@
     
     if(countOfItemsAlreadyEnumerated == 0)
     {
-        state->mutationsPtr = (unsigned long *)&_count;
+        state->mutationsPtr = &_count;
     }
     
     
